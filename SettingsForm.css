@@ -1,0 +1,68 @@
+/* Simple layout and styling for the settings form */
+.settings-form {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: system-ui, sans-serif;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.settings-form__title {
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+}
+
+.settings-form__field {
+  margin-bottom: 1rem;
+}
+
+.settings-form__field label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.settings-form__field input[type='text'],
+.settings-form__field input[type='email'],
+.settings-form__field select {
+  width: 100%;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.settings-form__field input[aria-invalid='true'] {
+  border-color: #dc2626;
+}
+
+.settings-form__field--checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.settings-form__error {
+  margin: 0.35rem 0 0;
+  color: #dc2626;
+  font-size: 0.875rem;
+}
+
+.settings-form__submit {
+  margin-top: 0.5rem;
+  padding: 0.55rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.settings-form__submit:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
